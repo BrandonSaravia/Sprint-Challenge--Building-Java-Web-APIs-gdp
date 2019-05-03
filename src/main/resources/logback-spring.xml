@@ -14,7 +14,7 @@
             <pattern>[%d{yyyy-MM-dd'T'HH:mm:ss.sss}] [%25.25class] [%thread] [%line] [%-5level] %m%n</pattern>
         </encoder>
 
-        <rollingPolicy class=" /var/tmp/logs/lambdajx">
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
 
             <!-- rollover daily -->
             <fileNamePattern>/var/tmp/mylog.%d{yyyy-MM-dd HH}.%i.txt</fileNamePattern>
@@ -34,7 +34,7 @@
             <pattern>[%d{yyyy-MM-dd'T'HH:mm:ss.sss'Z'}] [%C] [%t] [%L] [%-5p] %m%n</pattern>
         </encoder>
 
-        <rollingPolicy class=" /var/tmp/logs/lambdajx">
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
 
             <!-- rollover daily -->
             <fileNamePattern>/var/tmp/myTomcatLog.%d{yyyy-MM-dd HH}.%i.txt</fileNamePattern>

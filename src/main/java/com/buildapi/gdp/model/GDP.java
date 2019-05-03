@@ -48,6 +48,6 @@ public class GDP {
 
     @Override
     public String toString() {
-        return "GDP{" + "id=" + id + ", name='" + name + '\'' + ", gdp=" + gdp + '}';
+        return "GDP{" + "id=" + id + ", Country='" + name + '\'' + ", gdp=" + gdp + '}';
     }
 }
