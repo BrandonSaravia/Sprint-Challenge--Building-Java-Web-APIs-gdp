@@ -1,0 +1,18 @@
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>GDP Table Search</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>Country</th>
+        <th>GDP</th>
+    </tr>
+    <tr th:each="country : ${GdpList}">
+        <td th:text="${country.name}"/>
+        <td th:text="${country.gdp}"/>
+    </tr>
+</table>
+</body>
+</html>
