@@ -1,0 +1,19 @@
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>GDP Table Most To Least</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>Country</th>
+        <th>GDP</th>
+    </tr>
+    <tr th:each="country : ${gdpList}">
+        <td th:text="${country.name}"/>
+        <td th:text="${country.gdp}"/>
+    </tr>
+</table>
+
+</body>
+</html>
